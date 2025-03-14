@@ -1,62 +1,77 @@
-# Matrix-Magiq Immortality Chain (IMRT)
+# Immortality Chain (IMRT)
 
-## Overview
+## Project Overview
 
-The Immortality Chain (IMRT) is the core coordination layer for the Matrix-Magiq ecosystem, implementing JAM (Justified Atomic Merkleization) with comprehensive QValidator components. IMRT provides quantum-resistant validation and cross-chain functionality for the entire Matrix-Magiq ecosystem.
+Immortality Chain serves as the core coordination layer for the Matrix-Magiq ecosystem, implementing JAM (Justified Atomic Merkleization) with quantum-resistant security features. It provides the infrastructure for secure cross-chain communication and data integrity.
+
+## Technical Details
+
+This project is part of the Matrix-Magiq ecosystem, which aims to solve global food security challenges through blockchain technology with quantum resistance. The Matrix-Magiq ecosystem consists of five core components that work together:
+
+1. **Nourish Chain (NRSH)**: Parachain focused on spirulina cultivation tracking with registry, oracle, and telemetry pallets.
+2. **Elixir Chain (ELXR)**: Parachain focused on kombucha fermentation tracking, mirroring NRSH's structure with appropriate differences.
+3. **Immortality Chain (IMRT)**: Core coordination layer implementing JAM (Justified Atomic Merkleization) with QValidator components.
+4. **Liquidity Pallet**: Unified liquidity solution across all chains.
+5. **EigenLayer Implementation**: Security layer providing validator coordination across chains.
+
+## Focus Areas
+
+- Quantum-resistant security protocols
+- Cross-chain coordination
+- Justified Atomic Merkleization (JAM)
+- ActorX fill and kill operations with quantum keys
 
 ## Key Components
 
-- **QValidator Framework**: Core quantum validation framework
-- **QValidator-JAM**: Joint Authentication Mechanism for validated cross-chain operations
-- **QValidator-JAM-Authorizer**: Authorization module for JAM operations
-- **QValidator-JAM-Client**: Client implementation for JAM interaction
-- **QValidator-Actorx**: Fill and kill quantum keyed operations
+- **QValidator framework**: Core validation logic
+- **QValidator-JAM**: For Joint Authentication Mechanism
+- **QValidator-JAM-Authorizer**: For authorization
+- **QValidator-JAM-Client**: For client implementation
+- **QValidator-Actorx**: For fill and kill quantum keyed operations
 
-## Key Features
+## Comprehensive Error Correction
 
-- **Cross-Chain Coordination**: Unified coordination across all Matrix-Magiq chains
-- **Quantum-Resistant Security**: Post-quantum cryptographic algorithms implementation
-- **Atomic Merkleization**: Justified atomic operations with merkle proofs
-- **Quantum Validation**: Validation of operations using quantum-resistant mechanisms
-- **Comprehensive Error Correction**:
-  - Classical error correction using Reed-Solomon codes
-  - Bridge error correction for classical-quantum interfaces
-  - Quantum error correction using Surface codes
+This component implements error correction at three critical levels:
 
-## Integration
+1. **Classical Error Correction**: Using Reed-Solomon codes for traditional computing operations
+2. **Bridge Error Correction**: For classical-quantum interfaces
+3. **Quantum Error Correction**: Using Surface codes to protect quantum states
 
-The Immortality Chain integrates with:
+## Grant Request
 
-- **NRSH (Nourish Chain)**: Providing quantum-resistant validation
-- **ELXR (Elixir Chain)**: Providing quantum-resistant validation
-- **Liquidity Pallet**: Supporting unified liquidity across chains
-- **EigenLayer**: Enabling security through validator coordination
+We are requesting funding to continue development of this critical blockchain infrastructure that addresses global food security challenges. The funds will be used for:
 
-## Implementation
+1. Technical development and testing
+2. Security audits
+3. Documentation and educational resources
+4. Community building and engagement
+5. Integration with existing food security initiatives
 
-The IMRT implementation uses Substrate's FRAME system with specialized extensions for quantum-resistant operations.
+## Timeline and Milestones
 
-## Directory Structure
+**Phase 1 (3 months):**
+- Complete core infrastructure
+- Initial security audits
+- Developer documentation
 
-- `/src`: Source code including specialized components
-  - `/src/QValidator`: Core validation framework
-  - `/src/QValidator-JAM`: Joint Authentication Mechanism
-  - `/src/QValidator-JAM-Authorizer`: Authorization module
-  - `/src/QValidator-JAM-Client`: Client implementation
-  - `/src/QValidator-Actorx`: ActorX for fill and kill operations
-- `/docs`: Documentation including standards and specs
-  - `/docs/whitepapers`: Technical whitepapers
-- `/contracts`: Smart contracts for cross-chain operations
+**Phase 2 (3 months):**
+- Integration with partner projects
+- Expanded testing with real-world data
+- Community workshops and training
 
-## Documentation
+**Phase 3 (6 months):**
+- Full-scale deployment
+- Monitoring and refinement
+- Expand to additional regions
 
-For detailed documentation, see the `/docs` directory:
+## Budget
 
-- [Architecture Overview](./docs/ARCHITECTURE.md)
-- [Integration Guide](./docs/INTEGRATION.md)
-- [JAM Protocol Specification](./docs/JAM_PROTOCOL.md)
-- [QValidator Framework](./docs/QVALIDATOR_FRAMEWORK.md)
+Detailed budget breakdown available upon request, including allocation for development resources, security, testing, and community engagement.
 
-## License
+## Team
 
-GPL-3.0
+Our team combines expertise in blockchain development, quantum computing, food security, and sustainable agriculture.
+
+## Contact
+
+For more information, please contact: [Your Contact Information]

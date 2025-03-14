@@ -1,0 +1,61 @@
+[package]
+name = "imrt-node"
+version = "0.1.0"
+authors = ["Matrix-Magiq Developers"]
+description = "Immortality Chain Node Implementation"
+edition = "2021"
+build = "build.rs"
+
+[dependencies]
+clap = { version = "4.0.9", features = ["derive"] }
+futures = "0.3.21"
+serde = { version = "1.0.152", features = ["derive"] }
+serde_json = "1.0.91"
+jsonrpsee = { version = "0.16.2", features = ["server"] }
+log = "0.4.17"
+parity-scale-codec = { version = "3.2.1", default-features = false, features = ["derive"] }
+sc-cli = { version = "0.31.0", features = ["wasmtime"] }
+sc-client-api = "22.0.0"
+sc-consensus = "0.31.0"
+sc-consensus-aura = "0.31.0"
+sc-executor = { version = "0.31.0", features = ["wasmtime"] }
+sc-network = "0.31.0"
+sc-network-common = "0.31.0"
+sc-service = { version = "0.31.0", features = ["wasmtime"] }
+sc-telemetry = "22.0.0"
+sc-transaction-pool = "22.0.0"
+sc-transaction-pool-api = "22.0.0"
+sp-api = "22.0.0"
+sp-block-builder = "22.0.0"
+sp-blockchain = "22.0.0"
+sp-consensus = "0.31.0"
+sp-consensus-aura = "0.31.0"
+sp-core = "24.0.0"
+sp-inherents = "22.0.0"
+sp-runtime = "25.0.0"
+sp-timestamp = "22.0.0"
+sp-offchain = "22.0.0"
+substrate-prometheus-endpoint = "0.28.0"
+sp-keystore = "0.28.0"
+frame-benchmarking-cli = "32.0.0"
+try-runtime-cli = { version = "0.29.0", optional = true }
+
+imrt-runtime = { path = "../runtime" }
+
+# These dependencies are used for quantum validator components
+jam-quantum-bridge = { path = "../jam/coordinator", package = "jam-quantum-bridge" }
+quantum-validator = { path = "../pallets/qvalidator", package = "quantum-validator" }
+
+[build-dependencies]
+substrate-build-script-utils = "7.0.0"
+
+[features]
+default = []
+runtime-benchmarks = [
+    "imrt-runtime/runtime-benchmarks",
+    "frame-benchmarking-cli/runtime-benchmarks",
+]
+try-runtime = [
+    "imrt-runtime/try-runtime",
+    "try-runtime-cli/try-runtime",
+]
